@@ -1,0 +1,19 @@
+/* Error: expected "{".
+ *   ,
+ * 1 | $main-font-family: 'Montserat'; sans-serif;
+ *   |                                           ^
+ *   '
+ *   src\styles\common\variables.scss 1:43  @import
+ *   src\styles\common\index.scss 1:9       @import
+ *   src\styles\scss\home.scss 1:9          root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a   \2577 \a 1 \2502  $main-font-family: 'Montserat'; sans-serif;\a   \2502                                            ^\a   \2575 \a   src\\styles\\common\\variables.scss 1:43  @import\a   src\\styles\\common\\index.scss 1:9       @import\a   src\\styles\\scss\\home.scss 1:9          root stylesheet";
+}
