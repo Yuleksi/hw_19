@@ -222,14 +222,7 @@ body .gradient-bg {
 
 .header {
   padding-top: 50px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.header .navbar-toggler {
-  color: #fff;
-  border-color: #fff;
+  background: #B3B3BA;
 }
 .header .container {
   position: relative;
