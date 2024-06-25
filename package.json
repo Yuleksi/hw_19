@@ -1,0 +1,15 @@
+{
+  "name": "hw_19",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "scripts": {
+    "compile-home": "sass --watch ./src/styles/scss/home.scss:./src/styles/css/home.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
