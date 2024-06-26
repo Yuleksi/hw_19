@@ -1,0 +1,35 @@
+.tabs {
+padding: 60px 0;
+
+  &__controls {
+    $controls-base-width: 375px;
+    $controls-offset:60px;
+    $vertical-line-width: 4px;
+
+    min-width: calc($controls-base-width + $controls-offset + $vertical-line-width);
+    position: relative;
+
+    &-single {
+      display: inline-block;
+      max-width: $controls-base-width;
+
+
+      background: -webkit- + map-get($colors, 'accent-gradient');
+      background: -moz- + map-get($colors, 'accent-gradient');
+      background: -o- + map-get($colors, 'accent-gradient');
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    &:after {
+      content: '';
+      display: inline-block;
+width: $vertical-line-width;
+      height: 100%;
+      background-color: rgba(map-get($colors, 'white'), 0.3);
+      position: absolute;
+      right: 0;
+    }
+  }
+}
