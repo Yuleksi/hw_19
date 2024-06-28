@@ -1,5 +1,5 @@
 .tabs {
-  padding: 60px 0;
+  margin-bottom: 60px;
 
   &__controls {
     $controls-base-width: 375px;
@@ -23,11 +23,12 @@
       transition: 0.3s color;
 
       &.active {
-        background: -webkit- + map-get($colors, 'accent-gradient');
-        background: -moz- + map-get($colors, 'accent-gradient');
-        background: -o- + map-get($colors, 'accent-gradient');
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include text-gradient(map-get($colors, 'accent-gradient') );
+        //background: -webkit- + map-get($colors, 'accent-gradient');
+        //background: -moz- + map-get($colors, 'accent-gradient');
+        //background: -o- + map-get($colors, 'accent-gradient');
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
       }
 
       &:hover {

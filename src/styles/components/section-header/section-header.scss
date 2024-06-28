@@ -13,11 +13,11 @@
     display: inline-block;
     transition: 0.3s color;
 
-    &:after {
-      @extend %bootstrap-icons-base;
-      content: "\f285";
-      font-weight: 700;
-    }
+    //&:after {
+    //  @extend %bootstrap-icons-base;
+    //  content: "\f285";
+    //}
+
 
     &:hover {
       color: map-get($colors, 'accent-color');
@@ -25,7 +25,7 @@
   }
 
   &__title {
-    @include text-gradient(map-get($colors, 'title-gradient'));
+    @include text-gradient(map-get($colors, 'title-gradient') );
     font-weight: 700;
     font-size: map-get($font-sizes, 'xxl');
     line-height: map-get($font-sizes, 'xxl');
