@@ -2,6 +2,10 @@
   padding-bottom: 30px;
   background-color: map-get($colors, 'gray-bg') ;
 
+  .footer__contacts {
+    gap: 20px;
+  }
+
   a {
     color: map-get($colors, 'blue');
     text-decoration: none;
