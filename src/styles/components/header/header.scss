@@ -10,6 +10,10 @@
     border-color: map-get($colors, 'white');
   }
 
+  .header__top {
+gap: 10px;
+  }
+
   .container {
     position: relative;
   }

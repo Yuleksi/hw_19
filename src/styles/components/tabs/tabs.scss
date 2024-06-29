@@ -1,5 +1,5 @@
 .tabs {
-  margin-bottom: 60px;
+  padding: 60px 0;
 
   &__controls {
     $controls-base-width: 375px;
@@ -13,7 +13,7 @@
     flex-direction: column;
     gap: 30px;
 
-    &--single {
+    &-single {
       display: inline-block;
       max-width: $controls-base-width;
       font-weight: 700;
@@ -23,12 +23,11 @@
       transition: 0.3s color;
 
       &.active {
-        @include text-gradient(map-get($colors, 'accent-gradient') );
-        //background: -webkit- + map-get($colors, 'accent-gradient');
-        //background: -moz- + map-get($colors, 'accent-gradient');
-        //background: -o- + map-get($colors, 'accent-gradient');
-        //-webkit-background-clip: text;
-        //-webkit-text-fill-color: transparent;
+        background: -webkit- + map-get($colors, 'accent-gradient');
+        background: -moz- + map-get($colors, 'accent-gradient');
+        background: -o- + map-get($colors, 'accent-gradient');
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       &:hover {
